@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+</head>
+<body>
+    <canvas width="500" height="500" id="exampleCanvas"></canvas>
+    <script>
+        var canvas = document.getElementById("exampleCanvas");
+        var context = canvas.getContext("2d");
+        var image = new Image();
+        image.src = "IMG_1032.JPG";
+        image.onload = function() {
+            context.drawImage(image, 0, 0);
+        }
+
+        // Displays the text
+        // var canvas2 = document.getElementById("exampleCanvas2");
+        // var context2 = canvas.getContext("2d");
+        // context.font = "20px Times New Roman";
+        // context.fillText("Text", 30, 30);
+
+        // Creates rectangle
+        // var canvas3 = document.getElementById("exampleCanvas3");
+        // var context3 = canvas.getContext("2d");
+        // context.fillRect(0,0,100,100);
+
+        // Creates gradient on the canvas
+        // var canvas4 = document.getElementById("exampleCanvas3");
+        // var context4 = canvas.getContext("2d");
+        // var gradient = context.createLinearGradient(0,0,200,0);
+        // gradient.addColorStop(0, "blue");
+        // gradient.addColorStop(1, "black");
+        // context.fillRect(10, 10, 200, 200);
+    </script>
+</body>
+</html>
